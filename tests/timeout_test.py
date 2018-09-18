@@ -5,10 +5,7 @@ import asyncio
 from paco import timeout, TimeoutLimit, run
 from .helpers import run_in_loop
 
-try:
-    from asyncio import ensure_future
-except ImportError:
-    ensure_future = asyncio.async
+from asyncio import ensure_future
 
 
 @asyncio.coroutine

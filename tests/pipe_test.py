@@ -75,9 +75,9 @@ def test_overload_error():
         overload(None)
 
     with pytest.raises(ValueError,
-                       messsage='invalid function signature or arity'):
+                       message='invalid function signature or arity'):
         overload(lambda x: True)
 
     with pytest.raises(ValueError,
-                       messsage='invalid function signature or arity'):
+                       message='invalid function signature or arity'):
         overload(lambda x, y: True)
