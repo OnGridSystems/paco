@@ -5,8 +5,6 @@ import asyncio
 from paco import timeout, TimeoutLimit, run
 from .helpers import run_in_loop
 
-from asyncio import ensure_future
-
 
 @asyncio.coroutine
 def coro(delay=1):
