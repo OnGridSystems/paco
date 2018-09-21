@@ -1,20 +1,10 @@
 language: python
 
-python:
-  - "3.4"
-  - "3.5"
-  - "3.6"
-  - "3.7-dev"
-  - "3.8-dev"
-  - "nightly"
+python: 3.7
 
-sudo: false
+dist: xenial
 
-matrix:
-  allow_failures:
-    - python: "3.7-dev"
-    - python: "3.8-dev"
-    - python: nightly
+sudo: true
 
 install:
   - pip install -r requirements-dev.txt
